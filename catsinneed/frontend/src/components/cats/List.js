@@ -23,10 +23,10 @@ export class Cats extends Component {
           <div className='col-xs-12' MinHeight='800'>
             <div className = 'row'>
               {this.props.cats.map(cat => (            
-                  <div key={cat.id} className='col-xs-3' >
+                  <div key={cat.id} className='col-xs-12 col-sm-12 col-md-4 col-lg-4' >
                     {cat.picture !== "" ?
                     <div>
-                      <img src={cat.picture} height='300px' width='auto'/>
+                      <center> <img src={cat.picture} height='300px' width='auto'/> <center>
                     </div>
                     : <div>
                         <img src="https://icon-library.net/images/no-image-icon/no-image-icon-5.jpg" height='300px' width='auto'/>
